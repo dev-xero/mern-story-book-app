@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server/server.js",
-    "dev": "cross-env NODE_ENV=development nodemon server/server.js"
+    "server": "cross-env NODE_ENV=development nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "mern",
@@ -15,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
+    "concurrently": "^7.4.0",
     "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
