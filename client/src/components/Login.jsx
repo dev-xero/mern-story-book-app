@@ -13,7 +13,7 @@ const Login = () => {
         <p className="text-gray-400 font-[600] mb-[32px]">
           Create public and private stories about your life
         </p>
-        <button className="inline-flex bg-white rounded-md p-[6px] items-center w-[240px] shadow-md shadow-gray-200 hover:shadow-lg transition">
+        <button className="inline-flex bg-white rounded-md p-[6px] items-center w-[240px] shadow-md shadow-gray-200 hover:shadow-lg transition active:scale-[0.97] scale-100">
           <img src={GoogleIcon} alt="" className="block w-[32px] h-[32px]" />
           <span className="ml-[8px] font-bold text-gray-400">
             Continue with Google
